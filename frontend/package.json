@@ -1,0 +1,81 @@
+{
+    "name": "softeng-750-project",
+    "version": "0.1.0",
+    "private": "true",
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject",
+        "prettier": "pretty-quick",
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run --key ca7831d4-9124-49fb-9899-4807e569e4ae --record",
+        "storybook": "start-storybook -p 6006 -s public",
+        "build-storybook": "npm run build-tailwind && build-storybook --quiet -s ./src/stories/assets",
+        "build-tailwind": "npx tailwindcss build src/index.css -o src/stories/assets/app.css"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "@craco/craco": "^6.1.1",
+        "@tailwindcss/forms": "^0.3.2",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^13.1.5",
+        "@types/classnames": "^2.3.1",
+        "@types/jest": "^26.0.20",
+        "@types/node": "^14.14.41",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.2",
+        "@types/react-modal": "^3.12.0",
+        "@types/react-router-dom": "^5.1.7",
+        "axios": "^0.21.1",
+        "classnames": "^2.2.6",
+        "dayjs": "^1.10.4",
+        "jotai": "^0.16.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-hook-form": "^6.15.5",
+        "react-loader-spinner": "^4.0.0",
+        "react-modal": "^3.13.1",
+        "react-query": "^3.13.10",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-share": "^4.4.0",
+        "react-toast-notifications": "^2.4.3",
+        "typescript": "^4.2.3",
+        "web-vitals": "^1.0.1",
+        "yup": "^0.32.9"
+    },
+    "devDependencies": {
+        "@storybook/addon-actions": "^6.2.8",
+        "@storybook/addon-essentials": "^6.2.8",
+        "@storybook/addon-links": "^6.2.8",
+        "@storybook/node-logger": "^6.2.8",
+        "@storybook/preset-create-react-app": "^3.1.7",
+        "@storybook/react": "^6.2.8",
+        "@tailwindcss/aspect-ratio": "^0.2.0",
+        "@tailwindcss/postcss7-compat": "^2.0.3",
+        "@tailwindcss/typography": "^0.4.0",
+        "autoprefixer": "^9.8.6",
+        "cypress": "^7.2.0",
+        "eslint-config-prettier": "^8.2.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "postcss": "^7.0.35",
+        "postcss-cli": "^7.1.2",
+        "prettier": "2.2.1",
+        "pretty-quick": "^3.1.0",
+        "react-refresh": "^0.10.0",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
+    }
+}
